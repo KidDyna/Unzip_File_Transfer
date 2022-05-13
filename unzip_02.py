@@ -64,4 +64,4 @@ if os.path.isfile("zipData/new_path_fake_NDM_directory_for_file_transfer/DeluxeA
     open("zipData/new_path_fake_NDM_directory_for_file_transfer/trigger1.txt","w+")
     open("zipData/new_path_fake_NDM_directory_for_file_transfer/trigger2.txt", "w+")
 else:
-    raise ValueError("%s isn't a file!" % "zipData/extracts/trigger1.txt")
+    raise ValueError("%s isn't a file!" % "zipData/new_path_fake_NDM_directory_for_file_transfer/DeluxeAreaCodeDatabase.csv")
