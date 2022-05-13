@@ -1,6 +1,8 @@
 import zipfile
 import os
 import shutil
+import os.path
+import time
 
 # Create a ZipFile Object and load sample.zip in it
 with zipfile.ZipFile(r'C:\Users\kiddy\Documents\GitHub\unzip_file_transfer\Unzip_File_Transfer\zipData\zip-codes-database-STANDARD-csv.zip', 'r') as zipObj:
@@ -52,3 +54,14 @@ f = glob(os.path.join(path, "DeluxeAreaCodeDatabase.csv"))[0]
 os.rename(f, os.path.join(path, f"{date}_DeluxeAreaCodeDatabase.csv"))
 f = glob(os.path.join(path, "zip-codes-database-STANDARD.csv"))[0]
 os.rename(f, os.path.join(path, f"{date}_zip-codes-database-STANDARD.csv"))
+
+# Creates trigger files after CSVs are placed in NDM
+
+while not os.path.exists("zipData/new_path_fake_NDM_directory_for_file_transfer/DeluxeAreaCodeDatabase.csv"):
+    time.sleep(1)
+
+if os.path.isfile("zipData/new_path_fake_NDM_directory_for_file_transfer/DeluxeAreaCodeDatabase.csv"):
+    open("zipData/new_path_fake_NDM_directory_for_file_transfer/trigger1.txt","w+")
+    open("zipData/new_path_fake_NDM_directory_for_file_transfer/trigger2.txt", "w+")
+else:
+    raise ValueError("%s isn't a file!" % "zipData/extracts/trigger1.txt")
