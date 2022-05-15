@@ -17,8 +17,6 @@ with zipfile.ZipFile(r'zipData\zip-codes-database-STANDARD-csv.zip', 'r') as zip
 
 ############ STILL NEED TO FIGURE OUT IDENTIFYING THE DELUXE AREA CODE DB ZIP WITH A WILDCARD INSTEAD OF YYYY-MM- ##############
 
-
-
 with zipfile.ZipFile(r'zipData\2022-03-DeluxeAreaCodeDatabase-csv.zip', 'r') as zipObj:
     # Get a list of all archived file names from the zip
     listOfFileNames = zipObj.namelist()

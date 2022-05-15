@@ -2,9 +2,9 @@ import os
 import re
 import zipfile
 
-filenames = os.listdir('zipData\.')
+filenames = os.listdir('zipData.')
 for filename in filenames:
-    if re.findall(r"DeluxeAreaCodeDatabase-csv", filename):
+    if re.find(r"DeluxeAreaCodeDatabase-csv", filename):
         print(filename)
         break
 
