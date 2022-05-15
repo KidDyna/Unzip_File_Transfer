@@ -11,4 +11,5 @@ for filename in filenames:
     if not filename:
         print("No file found")
 
-    with zipfile.ZipFile(fileName, 'r')
+    with zipfile.ZipFile(fileName, 'r') as zipObj:
+        zipObj.extract(fileName, r'zipData\extracts')
