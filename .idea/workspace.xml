@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de5ae241-0d18-4bd3-abd7-823ff3156762" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ifFileName.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifFileName.py" beforeDir="false" afterPath="$PROJECT_DIR$/ifFileName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unzip_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/unzip_02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.unzip_02">
+  <component name="RunManager" selected="Python.ifFileName">
     <configuration name="createTriggerFiles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Unzip_File_Transfer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.unzip_02" />
         <item itemvalue="Python.ifFileName" />
+        <item itemvalue="Python.unzip_02" />
         <item itemvalue="Python.createTriggerFiles" />
       </list>
     </recent_temporary>
